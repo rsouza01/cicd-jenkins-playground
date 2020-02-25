@@ -9,9 +9,7 @@ pipeline {
   VAULT_URL = "http://www.vault.com"
   VAULT_SERVICE_NAME = "vault-cicd"
   }
-  agent {
-      docker { image 'node:7-alpine' }
-  }
+  agent any
   stages {
     stage("Prepare environment") {
       steps{
