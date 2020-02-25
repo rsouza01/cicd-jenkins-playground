@@ -14,10 +14,14 @@ pipeline {
   }
   stages {
     stage("Prepare environment") {
-      sh "echo Build Type = ${BUILD_TYPE}"
+      steps{
+        sh "echo Build Type = ${BUILD_TYPE}"
+      }
     }
     stage("Build") {
-      sh "echo Done"
+      steps{
+        sh "echo Done"
+      }
     }
     stage('Test') {
         steps {
