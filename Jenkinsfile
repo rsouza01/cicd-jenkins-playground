@@ -1,6 +1,6 @@
 #!groovy
 
-node('worker_node1') {  
+node {  
   stage("Prepare environment") {
     sh "echo Done"
   }
